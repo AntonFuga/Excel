@@ -7,6 +7,7 @@
     },
     "extends": ["eslint:recommended", "google"],
     "rules": {
+        "max-len": "off",
         "quotes": "off",
         "no-unused-vars":"warn",
         "no-trailing-spaces":"off"

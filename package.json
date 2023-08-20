@@ -5,18 +5,18 @@
   "main": "webpack.config.js",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack-dev-server --open",
-    "build": "webpack --mode production"
+    "build": "cross-env NODE_ENV=production webpack --mode production"
   },
   "keywords": [
     "js",
     "excel"
   ],
-  "author": "Anton Fuga",
+  "author": "Maxim",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.22.6",
     "@babel/preset-env": "^7.22.6",
-    "@babel/preset-react": "^7.22.5",
+    "@babel/preset-typescript": "^7.22.5",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^9.1.2",
     "clean-webpack-plugin": "^4.0.0",
@@ -30,8 +30,11 @@
     "mini-css-extract-plugin": "^2.7.6",
     "sass": "^1.63.6",
     "sass-loader": "^13.3.2",
-    "webpack": "^5.88.1",
+    "webpack": "^5.88.0",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
   }
 }
